@@ -11,19 +11,9 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#0B0B0C]"
     >
-      {/* Editorial Background Image with Dark Vignette */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0C] via-[#0B0B0C]/85 to-[#0B0B0C]/60 z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C] via-transparent to-[#0B0B0C]/80 z-10" />
-        <img
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2000&auto=format&fit=crop"
-          alt="Vicky Garments Luxury Fashion Saddar Rawalpindi"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-110 opacity-40 transition-transform duration-1000"
-        />
-      </div>
-
       {/* Decorative Gold Radial Glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-[#D4AF37]/10 blur-[150px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#D4AF37]/10 blur-[160px] pointer-events-none rounded-full" />
+      <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-[#D4AF37]/5 blur-[120px] pointer-events-none rounded-full" />
 
       {/* Hero Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
