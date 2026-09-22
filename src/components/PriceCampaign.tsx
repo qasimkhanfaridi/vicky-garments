@@ -32,9 +32,9 @@ export default function PriceCampaign({ onSelectCategory }: PriceCampaignProps) 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#B8860B]/10 border border-[#B8860B]/30 text-[#8B6508] text-xs font-mono uppercase tracking-widest mb-3 shadow-sm"
+            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#B8860B]/10 border border-[#B8860B]/30 text-[#8B6508] text-xs font-mono uppercase tracking-widest mb-3 shadow-sm font-bold"
           >
-            <Sparkles className="w-3.5 h-3.5" />
+            <Sparkles className="w-3.5 h-3.5 text-[#B8860B]" />
             <span>SPECIAL PRICE PROMOTION</span>
           </motion.div>
 
@@ -61,9 +61,9 @@ export default function PriceCampaign({ onSelectCategory }: PriceCampaignProps) 
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="group relative rounded-2xl overflow-hidden bg-white border border-stone-200/80 p-8 sm:p-12 hover:border-[#B8860B]/60 transition-all duration-500 flex flex-col justify-between shadow-lg hover:shadow-2xl"
+            className="group relative rounded-2xl overflow-hidden bg-white border border-stone-200/90 p-8 sm:p-12 hover:border-[#D4AF37] transition-all duration-500 flex flex-col justify-between shadow-xl hover:shadow-2xl"
           >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B8860B]/5 rounded-full blur-3xl group-hover:bg-[#B8860B]/10 transition-all duration-700 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl group-hover:bg-[#D4AF37]/15 transition-all duration-700 pointer-events-none" />
 
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -85,14 +85,14 @@ export default function PriceCampaign({ onSelectCategory }: PriceCampaignProps) 
             <div className="mt-8 pt-6 border-t border-stone-100 flex flex-wrap items-end justify-between gap-4">
               <div>
                 <span className="text-xs text-zinc-400 uppercase font-mono block">Fixed Deal Price</span>
-                <span className="font-serif-editorial text-5xl sm:text-6xl font-extrabold gold-gradient-text">
+                <span className="font-serif-editorial text-5xl sm:text-6xl font-extrabold gold-gradient-text-light">
                   ₨500
                 </span>
               </div>
 
               <button
                 onClick={() => handleDealClick("500")}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-zinc-900 text-white hover:bg-[#B8860B] font-bold text-xs uppercase tracking-widest transition-all duration-300 group/btn shadow-md"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-zinc-900 text-white hover:bg-[#D4AF37] hover:text-black font-bold text-xs uppercase tracking-widest transition-all duration-300 group/btn shadow-md"
               >
                 <span>VIEW Rs. 500 DEALS</span>
                 <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -106,9 +106,9 @@ export default function PriceCampaign({ onSelectCategory }: PriceCampaignProps) 
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="group relative rounded-2xl overflow-hidden bg-white border border-stone-200/80 p-8 sm:p-12 hover:border-[#B8860B]/60 transition-all duration-500 flex flex-col justify-between shadow-lg hover:shadow-2xl"
+            className="group relative rounded-2xl overflow-hidden bg-white border border-stone-200/90 p-8 sm:p-12 hover:border-[#D4AF37] transition-all duration-500 flex flex-col justify-between shadow-xl hover:shadow-2xl"
           >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl group-hover:bg-amber-500/10 transition-all duration-700 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl group-hover:bg-amber-500/15 transition-all duration-700 pointer-events-none" />
 
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -130,14 +130,14 @@ export default function PriceCampaign({ onSelectCategory }: PriceCampaignProps) 
             <div className="mt-8 pt-6 border-t border-stone-100 flex flex-wrap items-end justify-between gap-4">
               <div>
                 <span className="text-xs text-zinc-400 uppercase font-mono block">Fixed Deal Price</span>
-                <span className="font-serif-editorial text-5xl sm:text-6xl font-extrabold gold-gradient-text">
+                <span className="font-serif-editorial text-5xl sm:text-6xl font-extrabold gold-gradient-text-light">
                   ₨700
                 </span>
               </div>
 
               <button
                 onClick={() => handleDealClick("700")}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-zinc-900 text-white hover:bg-[#B8860B] font-bold text-xs uppercase tracking-widest transition-all duration-300 group/btn shadow-md"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#D4AF37] text-black hover:bg-[#E6C687] font-bold text-xs uppercase tracking-widest transition-all duration-300 group/btn shadow-md"
               >
                 <span>VIEW Rs. 700 DEALS</span>
                 <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
