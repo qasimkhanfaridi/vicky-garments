@@ -21,8 +21,8 @@ export const products: Product[] = [
     originalPrice: 1200,
     category: "500",
     dealTag: "Rs. 500 Special",
-    image: "https://images.unsplash.com/photo-1625910513413-6fc21e42a033?q=80&w=1000&auto=format&fit=crop",
-    secondaryImage: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=1000&auto=format&fit=crop",
+    secondaryImage: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop",
     sizes: ["S", "M", "L", "XL"],
     description: "Breathable textured cotton polo shirt with ribbed trim collar. High comfort for daily summer and spring wear.",
     isBestSeller: true
@@ -35,7 +35,7 @@ export const products: Product[] = [
     category: "700",
     dealTag: "Rs. 700 Special",
     image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=1000&auto=format&fit=crop",
-    secondaryImage: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1000&auto=format&fit=crop",
+    secondaryImage: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=1000&auto=format&fit=crop",
     sizes: ["M", "L", "XL", "XXL"],
     description: "Tailored Oxford casual button-up crafted from premium combed cotton. Perfect for evening outings or semi-formal wear.",
     isBestSeller: true
@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: "500",
     dealTag: "Rs. 500 Deal",
     image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop",
-    secondaryImage: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1000&auto=format&fit=crop",
+    secondaryImage: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1000&auto=format&fit=crop",
     sizes: ["S", "M", "L", "XL"],
     description: "100% ring-spun cotton t-shirt with reinforced double-stitched hem and soft tactile feel.",
     isNewArrival: true
@@ -61,7 +61,7 @@ export const products: Product[] = [
     category: "700",
     dealTag: "Rs. 700 Deal",
     image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=1000&auto=format&fit=crop",
-    secondaryImage: "https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=1000&auto=format&fit=crop",
+    secondaryImage: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=1000&auto=format&fit=crop",
     sizes: ["S", "M", "L", "XL"],
     description: "Ultra-cool relaxed linen blend shirt featuring mandarin collar styling. Ideal for hot Rawalpindi summer days.",
     isNewArrival: true
@@ -74,7 +74,7 @@ export const products: Product[] = [
     category: "500",
     dealTag: "Rs. 500 Deal",
     image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1000&auto=format&fit=crop",
-    secondaryImage: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1000&auto=format&fit=crop",
+    secondaryImage: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop",
     sizes: ["M", "L", "XL"],
     description: "Modern typography graphic print t-shirt. Oversized relaxed fit for effortless street style.",
     isBestSeller: true
@@ -87,7 +87,7 @@ export const products: Product[] = [
     category: "700",
     dealTag: "Top Value",
     image: "https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=1000&auto=format&fit=crop",
-    secondaryImage: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop",
+    secondaryImage: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=1000&auto=format&fit=crop",
     sizes: ["M", "L", "XL"],
     description: "Durable cotton twill overshirt with twin chest flap pockets. Versatile layer over t-shirts.",
     isNewArrival: true
@@ -100,7 +100,7 @@ export const products: Product[] = [
     category: "500",
     dealTag: "Rs. 500 Deal",
     image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=1000&auto=format&fit=crop",
-    secondaryImage: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?q=80&w=1000&auto=format&fit=crop",
+    secondaryImage: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop",
     sizes: ["30", "32", "34", "36"],
     description: "Comfortable stretch chino shorts with slant pockets. Everyday casual essential.",
     isBestSeller: false
