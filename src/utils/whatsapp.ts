@@ -24,7 +24,9 @@ I am interested in ordering the following item:
 💰 *Price:* Rs. ${product.price}
 🏷️ *Product Code:* ${product.id}${sizeText}
 
-Please confirm availability, size fitting, and order details for pickup/delivery in Rawalpindi.
+💳 *Payment:* Ready to pay advance via EasyPaisa / JazzCash / Bank Transfer.
+
+Please confirm availability and share account details.
 
 Thank you!`;
 
@@ -43,7 +45,7 @@ export function getGeneralWhatsAppLink(customSubject?: string): string {
 
 I am contacting you from your website${subjectText}.
 
-Could you please share details about your current Rs. 500 & Rs. 700 deals and stock availability at your Saddar, Rawalpindi store?
+Could you please share details about your current Rs. 500 & Rs. 700 deals, stock availability, and EasyPaisa/JazzCash/Bank account details for advance payment?
 
 Thank you!`;
 

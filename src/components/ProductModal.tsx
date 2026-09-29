@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, MessageCircle, ShieldCheck, Truck } from "lucide-react";
+import { X, MessageCircle, ShieldCheck, CreditCard, AlertCircle } from "lucide-react";
 import { Product } from "@/data/products";
 import { getProductWhatsAppLink } from "@/utils/whatsapp";
 
@@ -122,6 +122,19 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               {product.description}
             </p>
 
+            {/* Advance Payment Notice Box */}
+            <div className="p-3.5 rounded-xl bg-amber-50/80 border border-amber-200/80 mb-6 flex items-start gap-3 text-xs text-amber-900">
+              <CreditCard className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+              <div>
+                <span className="font-bold block uppercase tracking-wider text-[11px] text-amber-800">
+                  Advance Payment Only (No COD)
+                </span>
+                <p className="text-[11px] text-amber-900/80 mt-0.5 leading-snug">
+                  Pay via EasyPaisa, JazzCash or Bank Transfer upon WhatsApp confirmation.
+                </p>
+              </div>
+            </div>
+
             {/* Interactive Size Selector */}
             <div className="mb-6">
               <label className="block text-xs font-mono uppercase tracking-widest text-zinc-500 font-bold mb-2">
@@ -151,8 +164,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 <span>100% Quality Garment</span>
               </div>
               <div className="flex items-center gap-2">
-                <Truck className="w-4 h-4 text-[#B8860B] shrink-0" />
-                <span>Fast WhatsApp Pickup</span>
+                <AlertCircle className="w-4 h-4 text-[#B8860B] shrink-0" />
+                <span>Advance Payment Policy</span>
               </div>
             </div>
           </div>
@@ -170,7 +183,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             </a>
             
             <p className="text-[10px] text-zinc-400 font-mono text-center">
-              Clicking will open WhatsApp with pre-filled product details.
+              Clicking will open WhatsApp with pre-filled details & EasyPaisa/JazzCash inquiry.
             </p>
           </div>
         </div>

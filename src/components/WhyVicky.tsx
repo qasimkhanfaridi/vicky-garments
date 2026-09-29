@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { DollarSign, ShieldCheck, MessageSquareCheck, MapPin } from "lucide-react";
+import { DollarSign, ShieldCheck, CreditCard, MapPin } from "lucide-react";
 
 export default function WhyVicky() {
   const features = [
@@ -11,14 +11,14 @@ export default function WhyVicky() {
       description: "Fashion at prices that make sense. Unbeatable Rs. 500 & Rs. 700 special deals.",
     },
     {
+      icon: CreditCard,
+      title: "ADVANCE PAYMENT ONLY",
+      description: "Secure payments via EasyPaisa, JazzCash & Bank Transfer upon WhatsApp confirmation. No COD.",
+    },
+    {
       icon: ShieldCheck,
       title: "QUALITY COLLECTION",
       description: "Carefully selected fabrics and tailored garments built for everyday style and durability.",
-    },
-    {
-      icon: MessageSquareCheck,
-      title: "EASY ORDERING",
-      description: "Order directly through WhatsApp with zero checkout friction or registration forms.",
     },
     {
       icon: MapPin,

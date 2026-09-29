@@ -13,6 +13,13 @@ export const siteConfig = {
   whatsappNumber: "923000000000", 
   whatsappDisplayNumber: "+92 300 0000000",
 
+  // Payment Policy (No COD - Advance Payment Only)
+  paymentPolicy: {
+    isAdvanceOnly: true,
+    methods: ["EasyPaisa", "JazzCash", "Bank Transfer"],
+    noticeText: "Advance Payment Only via EasyPaisa, JazzCash or Bank Transfer. No Cash on Delivery (COD)."
+  },
+
   // Social Links
   tiktokUrl: "https://www.tiktok.com/@vicky.garment",
   tiktokHandle: "@vicky.garment",
@@ -43,7 +50,7 @@ export const siteConfig = {
   // SEO metadata
   seo: {
     title: "Vicky Garments Saddar Rawalpindi | Rs. 500 & Rs. 700 Garments",
-    description: "Shop affordable fashion from Vicky Garments in Saddar, Rawalpindi. Explore our Rs. 500 and Rs. 700 garment collections and order directly through WhatsApp.",
+    description: "Shop affordable fashion from Vicky Garments in Saddar, Rawalpindi. Explore our Rs. 500 and Rs. 700 garment collections and order directly through WhatsApp with EasyPaisa, JazzCash or Bank Transfer.",
     keywords: ["Vicky Garments", "Saddar Rawalpindi garments", "Rs 500 clothes Rawalpindi", "Rs 700 shirts Saddar", "Affordable fashion Rawalpindi", "Menswear Saddar"],
   }
 };
