@@ -3,22 +3,15 @@
 import { useState } from "react";
 import { MessageCircle, Eye, Tag } from "lucide-react";
 import { Product } from "@/data/products";
-import { getProductWhatsAppLink } from "@/utils/whatsapp";
 
 interface ProductCardProps {
   product: Product;
   onQuickView: (product: Product) => void;
+  onCheckout: (product: Product) => void;
 }
 
-export default function ProductCard({ product, onQuickView }: ProductCardProps) {
+export default function ProductCard({ product, onQuickView, onCheckout }: ProductCardProps) {
   const [isHovered, setIsHovered] = useState(false);
-
-  const whatsappUrl = getProductWhatsAppLink({
-    id: product.id,
-    name: product.name,
-    price: product.price,
-    category: product.category,
-  });
 
   return (
     <div
@@ -96,16 +89,14 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
 
         {/* Action Buttons */}
         <div className="pt-3 border-t border-stone-100 flex flex-col gap-2">
-          {/* WhatsApp Direct Order Button */}
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* WhatsApp Direct Order Button (Triggers Checkout & Admin Log) */}
+          <button
+            onClick={() => onCheckout(product)}
             className="w-full py-2.5 px-3 rounded-lg bg-zinc-900 hover:bg-[#B8860B] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-md hover:scale-[1.02] active:scale-[0.98]"
           >
             <MessageCircle className="w-4 h-4 fill-white" />
             <span>ORDER ON WHATSAPP</span>
-          </a>
+          </button>
 
           {/* Mobile Quick View Fallback */}
           <button

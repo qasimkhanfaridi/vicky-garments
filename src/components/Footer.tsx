@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin, MessageCircle, ExternalLink } from "lucide-react";
+import { MapPin, MessageCircle, ExternalLink, ShieldCheck } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import { getGeneralWhatsAppLink } from "@/utils/whatsapp";
 
@@ -64,10 +64,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Connect */}
+          {/* Connect & Admin */}
           <div>
             <h4 className="text-white text-xs font-mono uppercase tracking-widest mb-4">
-              CONNECT & ORDER
+              CONNECT & ADMIN
             </h4>
             <ul className="space-y-3 text-xs">
               <li>
@@ -91,6 +91,15 @@ export default function Footer() {
                   <MessageCircle className="w-3.5 h-3.5" />
                   <span>Order via WhatsApp</span>
                 </a>
+              </li>
+              <li className="pt-2 border-t border-white/5">
+                <Link
+                  href="/admin"
+                  className="inline-flex items-center gap-2 text-[#D4AF37] hover:text-[#E6C687] transition-colors font-mono font-bold"
+                >
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                  <span>Admin Orders Portal</span>
+                </Link>
               </li>
             </ul>
           </div>

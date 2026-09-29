@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import PriceCampaign from "@/components/PriceCampaign";
 import ProductGrid from "@/components/ProductGrid";
 import ProductModal from "@/components/ProductModal";
+import CheckoutModal from "@/components/CheckoutModal";
 import TikTokSection from "@/components/TikTokSection";
 import WhyVicky from "@/components/WhyVicky";
 import LocationSection from "@/components/LocationSection";
@@ -19,6 +20,7 @@ import { Product } from "@/data/products";
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [activeModalProduct, setActiveModalProduct] = useState<Product | null>(null);
+  const [activeCheckoutProduct, setActiveCheckoutProduct] = useState<Product | null>(null);
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
@@ -28,8 +30,8 @@ export default function Home() {
     setActiveModalProduct(product);
   };
 
-  const handleCloseModal = () => {
-    setActiveModalProduct(null);
+  const handleCheckout = (product: Product) => {
+    setActiveCheckoutProduct(product);
   };
 
   return (
@@ -50,6 +52,7 @@ export default function Home() {
         selectedCategory={selectedCategory}
         onSelectCategory={handleCategorySelect}
         onQuickView={handleQuickView}
+        onCheckout={handleCheckout}
       />
 
       {/* Social Media Showcase */}
@@ -74,7 +77,14 @@ export default function Home() {
       <MobileStickyCTA />
 
       {/* Accessible Quick View Product Drawer / Modal */}
-      <ProductModal product={activeModalProduct} onClose={handleCloseModal} />
+      <ProductModal product={activeModalProduct} onClose={() => setActiveModalProduct(null)} />
+
+      {/* Direct Order Form & Admin Logging Modal */}
+      <CheckoutModal
+        product={activeCheckoutProduct}
+        selectedSize={activeCheckoutProduct?.sizes[0] || "M"}
+        onClose={() => setActiveCheckoutProduct(null)}
+      />
     </main>
   );
 }

@@ -9,12 +9,14 @@ interface ProductGridProps {
   selectedCategory?: string;
   onSelectCategory?: (category: string) => void;
   onQuickView: (product: Product) => void;
+  onCheckout: (product: Product) => void;
 }
 
 export default function ProductGrid({
   selectedCategory = "all",
   onSelectCategory,
   onQuickView,
+  onCheckout,
 }: ProductGridProps) {
   const [activeTab, setActiveTab] = useState<string>(selectedCategory);
 
@@ -91,7 +93,11 @@ export default function ProductGrid({
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
               >
-                <ProductCard product={product} onQuickView={onQuickView} />
+                <ProductCard
+                  product={product}
+                  onQuickView={onQuickView}
+                  onCheckout={onCheckout}
+                />
               </motion.div>
             ))}
           </AnimatePresence>
